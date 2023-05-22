@@ -1,7 +1,6 @@
 import FileUploadPage from "../Pages/FileUploadPage";
 import LeftSideMenuPage from "../Pages/LeftSideMenuPage";
 import LoginPage from "../Pages/LoginPage";
-import 'cypress-iframe';
 
 Cypress.Commands.add("login", (email, password) => {
   LeftSideMenuPage.getForms().click();

@@ -63,18 +63,18 @@ describe("user auth test suite", () => {
       .isVisible();
   });
 
-  //it("Pagination test", () => {
-    //LeftSideMenuPage.getPagination().click();
-   // cy.wait(2000);
-    //PaginationPage.getPages();
- // });
+  it("Pagination test", () => {
+    LeftSideMenuPage.getPagination().click();
+    cy.wait(2000);
+    PaginationPage.getPages();
+  });
 
-    //it.only("Loader test", () => {
-      //LeftSideMenuPage.getLoader().click();
-      //cy.wait(3000);
-      //LoaderPage.getMessage().contains("Tada! Some text in my newly loaded page..").isVisible();
-  //});
+    it.only("Loader test", () => {
+      LeftSideMenuPage.getLoader().click();
+      cy.wait(3000);
+      LoaderPage.getMessage().contains("Tada! Some text in my newly loaded page..").isVisible();
+  });
 
-//it("Pick date test", ())
+it("Pick date test", ())
 
 });

@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:cloud": "npx cypress run --record --browser chrome --key 1d153244-b747-4e0a-8ded-be7ba2fbc74c",
+    "cy:chrome:headed": "npx cypress run --browser chrome -- headed",
+    "cy:chrome:headedless": "npx cypress run --browser chrome",
+    "cy:firefox:headed": "npx cypress run --browser firefox -- headed"
+
   },
   "keywords": [],
   "author": "",
@@ -13,5 +18,8 @@
   "devDependencies": {
     "@faker-js/faker": "^8.0.1",
     "cypress": "^12.12.0"
+  },
+  "dependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }
